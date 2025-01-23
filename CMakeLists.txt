@@ -21,7 +21,7 @@ set (srcs
   GACL_EmissionsMod.F90
   GACL_ReactionRatesMod.F90
   GACL_DryDepositionMod.F90
-  ACHEMGridCompMod.F90
+  ACHEM_GridCompMod.F90
   )
 
 esma_add_library (
@@ -36,7 +36,7 @@ new_esma_generate_automatic_code (
   ${this} ACHEM_Registry.rc
   "ACHEM_ExportSpec___.h;ACHEM_GetPointer___.h"
   ACHEM_History___.rc
-  ${include_ACHEM_GridComp} ${esma_etc}
+  ${include_ACHEM} ${esma_etc}
   "-f"
   )
 
