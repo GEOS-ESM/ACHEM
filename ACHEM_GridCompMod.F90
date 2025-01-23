@@ -5,11 +5,11 @@
 !-------------------------------------------------------------------------
 !BOP
 !
-! !MODULE: GEOS_AChemGridCompMod -
+! !MODULE: ACHEM_GridCompMod -
 !
 ! !INTERFACE:
 !
-   module GEOS_AChemGridCompMod
+   module ACHEM_GridCompMod
 !
 ! !USES:
 !
@@ -169,7 +169,7 @@ contains
 !   Load private Config Attributes
 !   ------------------------------
     self%CF = ESMF_ConfigCreate(__RC__)
-    call ESMF_ConfigLoadFile(self%CF, 'GEOS_AChemGridComp.rc', __RC__)
+    call ESMF_ConfigLoadFile(self%CF, 'ACHEM_GridComp.rc', __RC__)
 
     call ESMF_ConfigGetAttribute(self%CF, self%verbose, label='verbose:', default=.false., __RC__)
 
@@ -721,7 +721,7 @@ contains
 
 ! !EXTERNAL STATE:
     OPTIONAL_CHEM_EXPORT: if (self%mam_chem) then
-#include "GEOS_AChem_ExportSpec___.h"
+#include "ACHEM_ExportSpec___.h"
     end if OPTIONAL_CHEM_EXPORT
 
 
@@ -961,7 +961,7 @@ contains
 !  Declare pointers to IMPORT/EXPORT/INTERNAL states
 !  -------------------------------------------------
 #if(0)
-#include "GEOS_AChem_DeclarePointer___.h"
+#include "ACHEM_DeclarePointer___.h"
 #endif
 
 !  Get my name and set-up traceback handle
@@ -991,7 +991,7 @@ contains
 !  Get pointers to IMPORT/EXPORT/INTERNAL states
 !  ---------------------------------------------
 #if(0)
-#include "GEOS_AChem_GetPointer___.h"
+#include "ACHEM_GetPointer___.h"
 #endif
 
 !  Extract relevant runtime information
@@ -1307,7 +1307,7 @@ contains
 !  Declare pointers to IMPORT/EXPORT/INTERNAL states
 !  -------------------------------------------------
 #if(0)
-#include "GEOS_AChem_DeclarePointer___.h"
+#include "ACHEM_DeclarePointer___.h"
 #endif
 
 !  Get my name and set-up traceback handle
@@ -1318,7 +1318,7 @@ contains
 !  Get pointers to IMPORT/EXPORT/INTERNAL states
 !  ---------------------------------------------
 #if(0)
-   #include "GEOS_AChem_GetPointer___.h"
+   #include "ACHEM_GetPointer___.h"
 #else
 
 #endif
@@ -2135,7 +2135,7 @@ contains
    ! Note that we do not update the OH concentration
    ! Could (should?) integrate this with gas_chemistry below
    ! Right now the VOC calculation is optional, specified in
-   ! in GEOS_AchemGridComp.rc, but the export is coupled to
+   ! in ACHEM_GridComp.rc, but the export is coupled to
    ! GOCART if both GOCART and ACHEM are running, so fill
    ! in with zero in case it is requested.
 
@@ -3868,4 +3868,4 @@ contains
  end function day_of_year
 
 
- end module GEOS_AChemGridCompMod
+ end module ACHEM_GridCompMod
