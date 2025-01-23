@@ -1,13 +1,13 @@
 #
 # Resource file for the GEOS aerosol chemistry grid component.
 #
-#   15 Aug 2012  A. Darmenov   
+#   15 Aug 2012  A. Darmenov
 #--------------------------------------------------------------------
 
 verbose: .True.
 
 
-# MAM chemistry 
+# MAM chemistry
 # -------------------------------------
 gas_chemistry:      .false.
 aqueous_chemistry:  .false.
@@ -21,7 +21,7 @@ ocs_surface_vmr: 490.0e-12   # 'mol/mol'
 
 # VOC chemistry and parameters
 # -------------------------------------
-voc_chemistry:          .true. 
+voc_chemistry:          .true.
 voc_BiomassBurnFactor:  0.013   # 'g/g CO'
 voc_AnthroFactor:       0.069   # 'g/g CO'
 voc_MW:                 0.150   # 'kg/mol'

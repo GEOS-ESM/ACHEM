@@ -7,18 +7,18 @@
 #
 # -----------------------------------------------------------------
 
-COMP_NAME: GEOS_AChem
+COMP_NAME: ACHEM
 
 # Only change the Registry version when major structural changes
 # occurs, not changes in content
 # --------------------------------------------------------------
-  MAPL_REGISTRY_VERSION: 1.00  
+  MAPL_REGISTRY_VERSION: 1.00
 
 #                               ------------
 #                               Import State
 #                               ------------
 
-<ImportSpec name="GEOS_AChem", cols="short_name,units,dims,vlocation,stat,refresh_interval,averaging_interval,num_subtiles,default,long_name">
+<ImportSpec name="ACHEM", cols="short_name,units,dims,vlocation,stat,refresh_interval,averaging_interval,num_subtiles,default,long_name">
 # ----------------------|------------|-----|---|----|---|---|-----|------|--------------------------
 # Short                 |            |     | V |Item|Intervl| Sub | Def  | Long
 # Name                  |   Units    | Dim |Loc|Type| R | A |Tiles| ault | Name
@@ -39,7 +39,7 @@ COMP_NAME: GEOS_AChem
   TS                    | K          | xy  |   |    |   |   |     |      | Surface skin temperature
   U10N                  | m s-1      | xy  |   |    |   |   |     |      | Equivalent neutral 10 meter eastward wind
   V10N                  | m s-1      | xy  |   |    |   |   |     |      | Equivalent neutral 10 meter northward wind
-  FROCEAN               | 1          | xy  |   |    |   |   |     |      | Fraction of ocean 
+  FROCEAN               | 1          | xy  |   |    |   |   |     |      | Fraction of ocean
   FRLAND                | 1          | xy  |   |    |   |   |     |      | Fraction of land
   FRLAKE                | 1          | xy  |   |    |   |   |     |      | Fraction of lake
   FRLANDICE             | 1          | xy  |   |    |   |   |     |      | Fraction of land ice
@@ -54,7 +54,7 @@ COMP_NAME: GEOS_AChem
   H2O2                  | mol mol-1  | xyz | C |    |   |   |     |      | Hydrogen peroxide (H2O2)
   O3                    | kg kg-1    | xyz | C |    |   |   |     |      | Ozone (mass mixing ratio)
 # ---------------------|------------|-----|---|----|---|---|-----|------|--------------------------
-#  OHSTRAT              | mol mol-1  | xyz | C |    |   |   |     |      | Hydroxyl radical 
+#  OHSTRAT              | mol mol-1  | xyz | C |    |   |   |     |      | Hydroxyl radical
 #  O3P                  | mol mol-1  | xyz | C |    |   |   |     |      | O triplet P
 #  OCS_JRATE            | s-1        | xyz | C |    |   |   |     |      | OCS photolysis rates
 # ----------------------|------------|-----|---|----|---|---|-----|------|--------------------------
@@ -83,7 +83,7 @@ COMP_NAME: GEOS_AChem
 #                               Export State
 #                               ------------
 
-<ExportSpec name="GEOS_AChem", cols="short_name,units,dims,vlocation,stat,refresh_interval,averaging_interval,num_subtiles,long_name">
+<ExportSpec name="ACHEM", cols="short_name,units,dims,vlocation,stat,refresh_interval,averaging_interval,num_subtiles,long_name">
 # ----------------------|---------------|-----|---|----|---|---|-----|------------------------------
 # Short                 |               |     | V |Item|Intervl| Sub | Long
 # Name                  |   Units       | Dim |Loc|Type| R | A |Tiles| Name
@@ -119,7 +119,7 @@ COMP_NAME: GEOS_AChem
   CMD_S_H2SO4           | kg m-2        | xy  |   |    |   |   |     | Column mass density of H2SO4 in kg-S m-2
   CMD_S_GAS             | kg m-2        | xy  |   |    |   |   |     | Column mass density of sulfur in gas phase in kg-S m-2
 #
-  CMD_N_NH3             | kg m-2        | xy  |   |    |   |   |     | Column mass density of NH3 in kg-N m-2             
+  CMD_N_NH3             | kg m-2        | xy  |   |    |   |   |     | Column mass density of NH3 in kg-N m-2
   CMD_N_GAS             | kg m-2        | xy  |   |    |   |   |     | Column mass density of nitrogen in kg-N m-2
 #
   CMD_DMS               | kg m-2        | xy  |   |    |   |   |     | Column mass density of DMS
@@ -209,7 +209,7 @@ COMP_NAME: GEOS_AChem
 # Note: 1) For friendlies, use "D" for dynamics, "T" for turbulence and "C" for convection, or "S" for self (add to EXPORT state); leave blank otherwise
 #       2) If quantity requires no restart, put an 'x' in the No Rst column
 
-<InternalSpec name="GEOS_AChem", cols="short_name,units,dims,vlocation,stat,refresh_interval,averaging_interval,num_subtiles,default,norestart,halowidth,friendlyto,long_name">
+<InternalSpec name="ACHEM", cols="short_name,units,dims,vlocation,stat,refresh_interval,averaging_interval,num_subtiles,default,norestart,halowidth,friendlyto,long_name">
 # ----------------------|------------|-----|---|----|---|---|-----|------|----|----|---------|------
 #  Short                |            |     | V |Item|Intervl| Sub | Def  | No | Ha | Friends | Long
 #  Name                 |   Units    | Dim |Loc|Type| R | A |Tiles| ault | Rst| lo |         | Name
