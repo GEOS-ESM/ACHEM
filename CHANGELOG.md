@@ -17,6 +17,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Deprecated
 
+## [1.0.1] - 2025-09-09
+
+### Fixed
+
+- Port fix from split chem runs in v12. Mainly moves a timer
+
 ## [1.0.0] - 2023-08-25
 
 ### Added
