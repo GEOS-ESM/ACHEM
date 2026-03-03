@@ -25,31 +25,31 @@ Collections:
     template: ExtData/chemistry/HTAP/v2.2/sfc/htapv2.2.emisso2.surface.x3600y1800t12.2017.integrate.nc4
   ACHEM_qfed2.emis_co.006.%y4%m2%d2.nc4:
     template: ExtData/chemistry/QFED/v2.5r1-nrt/sfc/0.1/Y%y4/M%m2/qfed2.emis_co.006.%y4%m2%d2.nc4
-    valid_range:  "2014-12-01T12:00/2021-11-01T12:00"
+    valid_range: "2014-12-01T12:00/2021-11-01T12:00"
   ACHEM_qfed2.emis_nh3.006.%y4%m2%d2.nc4:
     template: ExtData/chemistry/QFED/v2.5r1-nrt/sfc/0.1/Y%y4/M%m2/qfed2.emis_nh3.006.%y4%m2%d2.nc4
-    valid_range:  "2014-12-01T12:00/2021-11-01T12:00"
+    valid_range: "2014-12-01T12:00/2021-11-01T12:00"
   ACHEM_qfed2.emis_so2.006.%y4%m2%d2.nc4:
     template: ExtData/chemistry/QFED/v2.5r1-nrt/sfc/0.1/Y%y4/M%m2/qfed2.emis_so2.006.%y4%m2%d2.nc4
-    valid_range:  "2014-12-01T12:00/2021-11-01T12:00"
+    valid_range: "2014-12-01T12:00/2021-11-01T12:00"
   ACHEM_qfed2.emis_co.061.%y4%m2%d2.nc4:
     template: ExtData/chemistry/QFED/v2.5r1-nrt/sfc/0.1/Y%y4/M%m2/qfed2.emis_co.061.%y4%m2%d2.nc4
-    valid_range:  "2021-11-01T12:00/2026-02-01"
+    valid_range: "2021-11-01T12:00/2026-02-01"
   ACHEM_qfed2.emis_nh3.061.%y4%m2%d2.nc4:
     template: ExtData/chemistry/QFED/v2.5r1-nrt/sfc/0.1/Y%y4/M%m2/qfed2.emis_nh3.061.%y4%m2%d2.nc4
-    valid_range:  "2021-11-01T12:00/2026-02-01"
+    valid_range: "2021-11-01T12:00/2026-02-01"
   ACHEM_qfed2.emis_so2.061.%y4%m2%d2.nc4:
     template: ExtData/chemistry/QFED/v2.5r1-nrt/sfc/0.1/Y%y4/M%m2/qfed2.emis_so2.061.%y4%m2%d2.nc4
-    valid_range:  "2021-11-01T12:00/2026-02-01"
+    valid_range: "2021-11-01T12:00/2026-02-01"
   ACHEM_qfed_emis_x3600y1800_so2.v3_2_2.%y4%m2%d2.nc4:
     template: ExtData/chemistry/QFED/v3.2r2-nrt/sfc/0.1/QFED/Y%y4/M%m2/qfed_emis_x3600y1800_so2.v3_2_2.%y4%m2%d2.nc4
-    valid_range: "2026-02-01T12:00/2028-01-01"
+    valid_range: "2026-01-15T12:00/2028-01-01"
   ACHEM_qfed_emis_x3600y1800_co.v3_2_2.%y4%m2%d2.nc4:
     template: ExtData/chemistry/QFED/v3.2r2-nrt/sfc/0.1/QFED/Y%y4/M%m2/qfed_emis_x3600y1800_co.v3_2_2.%y4%m2%d2.nc4
-    valid_range: "2026-02-01T12:00/2028-01-01"
+    valid_range: "2026-01-15T12:00/2028-01-01"
   ACHEM_qfed_emis_x3600y1800_nh3.v3_2_2.%y4%m2%d2.nc4:
     template: ExtData/chemistry/QFED/v3.2r2-nrt/sfc/0.1/QFED/Y%y4/M%m2/qfed_emis_x3600y1800_nh3.v3_2_2.%y4%m2%d2.nc4
-    valid_range: "2026-02-01T12:00/2028-01-01"
+    valid_range: "2026-01-15T12:00/2028-01-01"
 
 Samplings:
   ACHEM_sample_0:
