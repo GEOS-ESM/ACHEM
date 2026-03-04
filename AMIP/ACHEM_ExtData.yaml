@@ -97,7 +97,7 @@ Exports:
     variable: emi_nh3
   NH3_EMIS_FIRE:
     - {starting: "1960-01-16T12:00", collection: ACHEM_hfed.emis_nh3.x576_y361.%y4%m2.nc4, regrid: CONSERVE, sample: ACHEM_sample_0, variable: biomass}
-    - {starting: "2000-03-01T00:00", collection: ACHEM_qfed2.emis_nh3.061.%y4%m2%d2.nc4, regrid: CONSERVE, sample: ACHEM_sample_0, variable: biomass}
+    - {starting: "2000-03-01T12:00", collection: ACHEM_qfed2.emis_nh3.061.%y4%m2%d2.nc4, regrid: CONSERVE, sample: ACHEM_sample_0, variable: biomass}
     - {starting: "2023-03-01T12:00", collection: ACHEM_qfed_emis_x3600y1800_nh3.v3_2_2.%y4%m2%d2.nc4, regrid: CONSERVE, sample: ACHEM_sample_0, variable: biomass}
   NH3_EMIS_OCEAN:
     collection: ACHEM_GEIA.emis_NH3.ocean.x576_y361.t12.20080715_12z.nc4
