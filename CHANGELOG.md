@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 ### Changed
-
+- ExtData.yaml file to use science quality QFED3 data beginning 11/27/25 specifically for x run testing
 ### Fixed
 
 ### Removed
