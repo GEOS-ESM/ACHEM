@@ -12,9 +12,9 @@
 ! !USES:
 !
 #ifdef MAPL_MODE
-   use MAPL_ConstantsMod, only : MAPL_PI, MAPL_GRAV, MAPL_AVOGAD, MAPL_RUNIV, &
-                                 MAPL_AIRMW, MAPL_H2OMW, MAPL_O3MW, &
-                                 MAPL_TICE
+   use MAPL_Constants, only : MAPL_PI, MAPL_GRAV, MAPL_AVOGAD, MAPL_RUNIV, &
+                              MAPL_AIRMW, MAPL_H2OMW, MAPL_O3MW, &
+                              MAPL_TICE
 #endif
 
    implicit none
@@ -26,7 +26,7 @@
 !
 ! !PUBLIC PARAMETERS:
 #ifdef MAPL_MODE
-   real, parameter, public :: pi       = MAPL_PI                ! pi 
+   real, parameter, public :: pi       = MAPL_PI                ! pi
    real, parameter, public :: N_avog   = 1e-3 * MAPL_AVOGAD     ! Avogadro's constant,                '1 mol-1'
    real, parameter, public :: R_univ   = 1e-3 * MAPL_RUNIV      ! Universal/ideal gas constant,       'J K-1 mol-1'
    real, parameter, public :: g_earth  = MAPL_GRAV              ! standard gravity,                   'm s-2'
@@ -35,7 +35,7 @@
    real, parameter, public :: mw_H2O   = 1e-3 * MAPL_H2OMW      ! molar mass of water,                'kg mol-1'
    real, parameter, public :: mw_O3    = 1e-3 * MAPL_O3MW       ! molar mass of ozone,                'kg mol-1'
 #else
-   real, parameter, public :: pi       = 3.141592653589793      ! pi 
+   real, parameter, public :: pi       = 3.141592653589793      ! pi
    real, parameter, public :: N_avog   = 6.022e23               ! Avogadro's constant,                '1 mol-1'
    real, parameter, public :: R_univ   = 8.31447                ! Universal/ideal gas constant,       'J K-1 mol-1'
    real, parameter, public :: g_earth  = 9.80665                ! standard gravity,                   'm s-2'
@@ -65,7 +65,7 @@
 ! !PRIVATE PARAMETERS:
 
 !
-! !DESCRIPTION: 
+! !DESCRIPTION:
 !
 !  {\tt GACL\_ConstantsMod} defines physics and chemistry constants.
 !
