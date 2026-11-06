@@ -29,4 +29,3 @@ Fixture: `components.yaml` @ `0f2e0fb`, key `ACHEM`. Documentation only; no
 
 ## Build and test
 - Built as library `ACHEM` by the parent's CMake; no tests in this repository.
-- Use NAG first, then gfortran, in the full GEOSgcm build.
