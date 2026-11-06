@@ -8,7 +8,7 @@ Other fixtures (for example GEOSadas, GEOSldas) may place this repository
 elsewhere; paths inside this repository do not change.
 
 Parent: the Chemistry component, see
-[`GEOSchem_GridComp/docs/ARCHITECTURE.md`](../../docs/ARCHITECTURE.md)
+`GEOSchem_GridComp/docs/ARCHITECTURE.md` (`../../docs/ARCHITECTURE.md` in the fixture)
 (sections 2.3 and 3: how children are added, run phases, connections, the
 `AERO` state). This file does not repeat it. Previous decisions:
 [decisions.md](decisions.md).
