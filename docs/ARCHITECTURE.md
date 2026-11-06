@@ -23,7 +23,7 @@ code, kept for a later port; it differs from `develop` only in
 Parent: the Chemistry component, see
 `GEOSchem_GridComp/docs/ARCHITECTURE.md` (`../../docs/ARCHITECTURE.md` in the fixture)
 (how children are added, run phases, connections, the
-`AERO` state) (on this line the parent's documents are not written yet; the MAPL2-line versions are on its `develop` branch). This file does not repeat it. Previous decisions:
+`AERO` state). This file does not repeat it. Previous decisions:
 [decisions.md](decisions.md).
 
 ## 1. Placement and map of the repository

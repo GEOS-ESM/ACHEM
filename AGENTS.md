@@ -21,7 +21,7 @@ code, kept for a later port; it differs from `develop` only in
 ## Read first
 - `docs/ARCHITECTURE.md`: map, entry points, state, switches, traps, observations.
 - `docs/decisions.md`: patterns seen in the code.
-- Parent: `../docs/ARCHITECTURE.md` (Chemistry; how children are added, run phases, connections). `../AGENTS.md` (on this line the parent's documents are not written yet; the MAPL2-line versions are on its `develop` branch).
+- Parent: `../docs/ARCHITECTURE.md` (Chemistry; how children are added, run phases, connections). `../AGENTS.md`.
 
 ## Where things are
 - `ACHEM_GridCompMod.F90`: whole component; public `SetServices` only. Routines: `Initialize_`, `Run_` (one phase), `Finalize_`, `gas_chemistry`, `aqu_chemistry_fast`, `ocs_chemistry`.
